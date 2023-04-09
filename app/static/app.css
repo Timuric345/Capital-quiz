@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&family=Phudu:wght@300&display=swap');
+*{  
+    line-height: 1.5;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'PT Sans', sans-serif;
+    min-height: 100dvh;
+    display: flex;
+    background: url(wave.png);
+    background-color: #242582;
+    background-size: cover;
+    flex-flow: column;
+    color: azure;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+#menu{
+display:flex;
+height:20vh;
+flex-flow: column;
+justify-content: space-around;
+width: 100vw;
+align-items: center;
+margin-top: 0vh;
+
+}
+#rules{
+    margin-bottom: 5vh;
+    text-align: center;
+}
+
+main{
+    flex-flow: column;
+    align-items: center;
+    width: 80%;
+    display:flex;
+    justify-content: center;
+    height: 80vh;
+
+}
+#globalHeader{
+    
+    display: flex;
+    align-items: center;
+    margin: 2.5vh 0;
+    transform: rotate(1.5deg); 
+    box-shadow: #ff0062 2px 1px 2px;
+    justify-content: center;
+    padding: 2.5vh 4.5vw;
+    background:#f64c72;
+    border-radius: 5px;
+    border:solid 2px #f64c72;
+    color: azure;
+}
+form{
+    flex-flow: column;
+    align-items: center;
+    width: 80%;
+    display:flex;
+    margin-bottom: 5vh;
+}
+footer{
+      width: 100%; 
+      display: flex; 
+      justify-content: center;
+      padding: 2.5vh 0;
+      margin-top: 15vh 0;
+      background: azure;
+      color: black;
+
+}
+#project_name{
+      width: 100vw;
+      margin-top: 15vh;
+      font-size: 215%;
+      text-shadow: azure 2px;
+      background-color: azure;
+      color: #f64c72;
+      border-radius: 5px;
+      box-shadow: #ff0062 2px 1px 2px;
+      transform:rotate(1.5deg);
+      padding: 1.5vh 2.5vw;
+      text-transform: uppercase;
+      text-align: center;
+}
+
+.question{
+    width: 90%;
+    min-height: 15vh;     
+    background-color:rgba(#242582, 1);
+    backdrop-filter: blur(10px);
+    margin: 1.5vh 0;
+    padding: 2.5vh 1.5vw;
+    border-radius: 15px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.question label{
+    margin-bottom: 2.5vh;
+    font-size: 1.25rem;
+}
+
+.input ::placeholder{
+    color: azure;
+}
+.question input{
+    box-shadow: inset 1px 2px 1px;
+    border:0 ;
+    border-radius: 5px;
+    width: 80%;
+    background-color: rgba(255, 255, 255, 0.45);
+    text-align: center;
+    text-transform:uppercase;
+    min-height: 3.5vh;
+}
+
+::-webkit-input-placeholder{
+    color: azure;
+}
+.buttonGroup{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    width:80%;
+    align-items: center;
+    margin: 1vh;
+}
+
+.button-1 {
+   cursor: pointer; 
+  width: 45%;
+  background-color: #f64c72;
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  height: 40px;
+  line-height: 20px;
+  list-style: none;
+  margin: 0;
+  outline: none;
+  padding: 10px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: color 100ms;
+  vertical-align: baseline;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-1:hover,
+.button-1:focus {
+  background-color: #ff0062;
+}
+
+#result{
+    margin: 3vh;
+}
+
+.mark{
+    margin: 3vh;
+    margin-bottom: 10vh;
+}

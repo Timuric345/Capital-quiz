@@ -1,0 +1,19 @@
+{% extends "base.html"%}
+{%block content %}
+<header id="globalHeader"><h1>Geography Test </h1></header>
+<form action="{{url_for('result')}}" method = "POST">
+    {%for q in range(10)%}
+    <section class="question">
+    <label for="answer">{{data[0][q]}}</label>
+    <input type="text"class = "answer" name = "useranswer_{{q}}" placeholder="your answer">
+    </section>
+    {%endfor%}
+    <div class="buttonGroup">
+     <a href="/index"class="button-1">Go back</a>
+     <input type="submit" id = "send" class="button-1" value="send">
+    </div>
+</form>
+<footer>
+    <p class="copy">Copy whrite 2023</p>
+</footer>
+{% endblock%}

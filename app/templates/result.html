@@ -1,0 +1,32 @@
+{% extends "base.html"%}
+{%block content %}
+<main>
+<header id="globalHeader"><h1>Test Result</h1></header>
+<h1 id = result>Your scored {{score}} out of 100</h1>
+{% if score > 90%}
+<h1 class= "mark">Excellent</h1> 
+{%endif%}
+{% if 90 > score %}
+{% if score > 70%}
+<h1 class = "mark">Good</h1>
+{%endif%}
+{%endif%}
+{% if 70 > score %}
+{% if score > 50%}
+<h1 class = "mark">so-so</h1>
+{%endif%}
+{%endif%}
+{% if 50 > score %}
+{% if score > 30%}
+<h1 class = "mark">bad</h1>
+{%endif%}
+{%endif%}
+{% if 20 > score %}
+<h1 class = "mark">very bad</h1>
+{%endif%}
+<a href= "/index"class="button-1">Back home</a>
+</main>
+<footer>
+    <p class="copy">Copy whrite 2023</p>
+</footer>
+{% endblock%}
